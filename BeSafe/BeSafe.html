@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>BeSafe</title>
+    <link href="styles.css" rel="stylesheet">
+    
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=
+Fira+Code&family=Lato:wght@700&family=Montserrat:wght@100&family=Open+Sans&family=
+Quicksand:wght@600&family=Roboto+Mono:wght@300&family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="sty.css" />
+    <link rel="stylesheet" type="text/css" href="sty2.css" />
+
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.2.1/chart.min.js" integrity="sha512-v3ygConQmvH0QehvQa6gSvTE2VdBZ6wkLOlmK7Mcy2mZ0ZF9saNbbk19QeaoTHdWIEiTlWmrwAL4hS8ElnGFbA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.min.js"></script>
+<link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.css" type="text/css">
+    <main>
+    <!-- <nav>
+        <div class="container">
+            <div class="menu" id="show-menu">
+                <img src="./logo.jpg">
+                <a href="#">HOME</a>
+                <a href="#">Be Safe!</a>
+                <a href="#">Report an Incident</a>
+                <a href="#">Need Support?</a>
+            </div>
+
+            <button class="hamburger" onclick="show()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+    </nav> -->
+
+    <nav>
+      <div class="container">
+          <div class="menu" id="show-menu">
+              <!-- <a href="#">CrimeGlance</a> -->
+              <img src="./logo.jpg">
+              <a href="../HOME/Home.html">HOME</a>
+              <a href="../BeSafe/BeSafe.html">Be Safe!</a>
+              <a href="../Support/Support.html">Need Support?</a>
+              <a href="../Contact/contact.html" /*class="is-active" * />Contact Us</a>
+          </div>
+
+          <button class="hamburger" onclick="show()">
+              <span></span>
+              <span></span>
+              <span></span>
+          </button>
+
+      </div>
+  </nav>
+    <div class="big">
+        <div id='map'></div>
+        <div id="info">
+            <div class="category">
+                <select name="city-data" id="city" onchange="selection()">
+                    <option value="" selected>Please Select A City</option>
+                    <option value="Surat, India">Surat, India</option>
+                    <option value="Ahmedabad">Ahmedabad, India</option>
+                    <option value="Washington, D.C.">Washington DC</option>
+                    <option value="San Francisco, California">San Francisco</option>
+                </select>
+            </div>
+            <div class="card">
+                <span id="murders"></span>
+            </div>
+            <div class="card"><span id="robbery"></span></div>
+            <div class="card"><span id="arson"></span></div>
+            <div class="card"><span id="dui"></span></div>
+            <div class="card"><span id="hack"></span></div>
+        </div>
+        <div class="containschart">
+            <canvas id="myChart" height="300px" width="300px"></canvas>
+        </div>
+    </div>
+</main>
+    
+<script src="index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  var ctx = document.getElementById('myChart').getContext('2d');
+  var myChart = new Chart(ctx, {
+    type: 'pie',
+    data: {
+      labels: ['Murder', 'Robbery', 'Arson', 'DUI', 'Rape'],
+      datasets: [{
+        label: '# of Counts',
+        data: [12, 19, 3, 5, 2],
+        backgroundColor: [
+          'rgba(255, 99, 132, 0.5)',
+          'rgba(54, 162, 235, 0.5)',
+          'rgba(255, 206, 86, 0.5)',
+          'rgba(75, 192, 192, 0.5)',
+          'rgba(153, 102, 255, 0.5)',
+          'rgba(255, 159, 64, 0.5)'
+        ],
+        borderColor: [
+          'rgba(255, 99, 132, 1)',
+          'rgba(54, 162, 235, 1)',
+          'rgba(255, 206, 86, 1)',
+          'rgba(75, 192, 192, 1)',
+          'rgba(153, 102, 255, 1)',
+          'rgba(255, 159, 64, 1)'
+        ],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+});
+</script>
+<!-- <script src="chart1.js"></script> -->
+</body>
+</html>
