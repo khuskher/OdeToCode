@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>CONTACT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=
+Fira+Code&family=Lato:wght@700&family=Montserrat:wght@100&family=Open+Sans&family=
+Quicksand:wght@600&family=Roboto+Mono:wght@300&family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" type="text/css" href="sty.css" />
+    <link rel="stylesheet" type="text/css" href="sty2.css" />
+</head>
+<body>
+
+    <!-- <nav>
+        <div class="container">
+            <div class="menu" id="show-menu">
+                <img src="logo.png">
+                <a href="#">HOME</a>
+                <a href="#">Be Safe!</a>
+                <a href="#">Need Support?</a>
+                <a href="#" /*class="is-active"*/>Contact Us</a>
+            </div>
+
+            <button class="hamburger" onclick="show()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+    </nav> -->
+    <nav>
+        <div class="container">
+            <div class="menu" id="show-menu">
+                <img src="./logo.png">
+                <a href="../HOME/Home.html">HOME</a>
+                <a href="../BeSafe/BeSafe.html">Be Safe!</a>
+                <a href="../Support/Support.html">Need Support?</a>
+                <a href="../Contact/contact.html" /*class="is-active" * />Contact Us</a>
+            </div>
+
+            <button class="hamburger" onclick="show()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+    </nav>
+
+    <section>
+        <form onsubmit="sendEmail(); reset(); return false;">
+            <h3>Report An Incident</h3>
+            <input type="text" name="name" id="name" placeholder="Your Name" required>
+            <input type="email" name="email" id="email" placeholder="Your Gmail" required>
+            <input type="tel" name="phone" id="phone" placeholder="Phone No." required>
+            <input type="text" name="location" id="location" placeholder="Add location of the incident" required>
+            <textarea name="message" id="message" cols="30" rows="40" placeholder="Your Message here"></textarea>
+            <button type="submit" class="button-85">Report</button>
+        </form>
+    </section>
+    <!-- <div class="container"> -->
+        <!-- onsubmit="sendEmail(); reset(); return false;" -->
+        <!-- action="https://formsubmit.co/el/disiyi" method="POST" -->
+        
+    <!-- </div> -->
+     <!-- Host : "smtp.elasticemail.com",
+    Username : "academicaccforyatra@gmail.com",
+    Password : "6908A26FD60CA6B7FED1F2B2549CE83686C3", -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail()
+        {
+                        Email.send({
+                            SecureToken:"04464e51-f3a9-4614-bec9-a0442793af26",
+                                To : "academicaccforyatra@gmail.com",
+                                From: "academicaccforyatra@gmail.com",
+                                Subject : "new incident reported",
+                                Body : "Name: " + document.getElementById("name").value
+                                + "<br> Email: " + document.getElementById("email").value
+                                + "<br> Phone No.: " + document.getElementById("phone").value
+                                + "<br> Location: " + document.getElementById("location").value
+                                + "<br> Message: " + document.getElementById("message").value
+            }).then(
+            message => alert(message)
+            );
+        }
+    </script>
+</body>
+</html>
