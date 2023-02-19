@@ -1,0 +1,107 @@
+.marker {
+    background-image: url('mapbox-icon.png');
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .mapboxgl-popup {
+    max-width: 200px;
+  }
+  
+  .mapboxgl-popup-content {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+  }
+#map {
+   height: 75vh;
+    width: 80vw;
+    margin-bottom: 1vw;
+}
+#info {
+    color: rgb(0, 0, 0);
+    width: 80vw;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    /* background-color: red; */
+}
+.card {
+    height: 10vh;
+    width: 20vw;
+    background-color: #ffffff;
+    margin: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+}
+.big {
+  height: 250vh;
+  width: 80vw;
+  margin-top: 20vh;
+  /* background-color: #2929c0; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 15vh;
+}
+select {
+  width: 45vw;
+  height: 7vh;
+  font-size: 4vh;
+  padding-left: 2vw;
+  border-radius: 10px;
+}
+.category {
+  /* background-color: rgb(20, 220, 20); */
+  width: 80vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.containschart {
+  height: 60vh;
+  width: 70vw;
+  /* background-color: blanchedalmond; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5vw;
+}
+::-webkit-scrollbar {
+  width: 6px;
+} 
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+} 
+::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+.menu img {
+  width:60px;
+  height: 60px;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 5vw;
+}
