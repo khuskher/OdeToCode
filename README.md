@@ -1,6 +1,6 @@
-Team Name:OdeToCode
-Team members:Aditi Sadadiwala,Khushi Kher, Yatra Vaghasia
-Description:Here you can get access to the real-time information and statistics on crime in your area. Our goal is to provide you with the information you need to stay informed and stay safe.
+Team Name: OdeToCode
+Team members: Aditi Sadadiwala, Khushi Kher, Yatra Vaghasia
+Description: Here you can get access to the real-time information and statistics on crime in your area. Our goal is to provide you with the information you need to stay informed and stay safe.
 The dashboard provides a comprehensive view of crime trends in your community, including information on the types of crimes that are most prevalent, the areas where crime is most likely to occur, and the times of day when crimes are most likely to take place.
 You can use the dashboard to stay informed about crime trends in your area, and to take steps to protect yourself and your property. For example, if you notice that there has been an increase in burglaries in your neighborhood, you might want to consider installing a security system or taking other steps to secure your home.
 In addition to providing information on crime trends, the dashboard also offers tips and resources for staying safe. You can access information on how to report a crime, how to protect yourself from identity theft and other forms of fraud, and how to stay safe when walking or driving in your neighborhood.
