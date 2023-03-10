@@ -1,7 +1,9 @@
 Team Name: OdeToCode
 Team members: Aditi Sadadiwala, Khushi Kher, Yatra Vaghasia
-Description: Here you can get access to the real-time information and statistics on crime in your area. Our goal is to provide you with the information you need to stay informed and stay safe.
-The dashboard provides a comprehensive view of crime trends in your community, including information on the types of crimes that are most prevalent, the areas where crime is most likely to occur, and the times of day when crimes are most likely to take place.
-You can use the dashboard to stay informed about crime trends in your area, and to take steps to protect yourself and your property. For example, if you notice that there has been an increase in burglaries in your neighborhood, you might want to consider installing a security system or taking other steps to secure your home.
-In addition to providing information on crime trends, the dashboard also offers tips and resources for staying safe. You can access information on how to report a crime, how to protect yourself from identity theft and other forms of fraud, and how to stay safe when walking or driving in your neighborhood.
-Overall, the Crime Awareness Dashboard is a powerful tool for staying informed and staying safe. By using the information and resources available through the dashboard, you can take steps to protect yourself, your family, and your community from crime.
+Description: Crime Glance is a dynamic web application that helps people stay informed about crime rates in their area and provides essential safety tips to ensure their well-being. Developed using HTML, CSS, and JavaScript, this hackathon project leverages a MongoDB database to store and display real-time crime data in a user-friendly format.
+
+With its intuitive interface and comprehensive crime mapping system, Crime Glance provides users with accurate information on crime rates in their area. Users can also access safety resources and tips to help them stay safe while travelling or at home. The project also utilizes Mapbox to provide an interactive map that displays the exact location of reported crimes.
+
+Additionally, Crime Glance features an admin portal that allows authorized users to manage and update the crime data displayed on the website. With this functionality, law enforcement agencies or community organizations can easily contribute to the database and help keep users informed about potential safety risks.
+
+Overall, Crime Glance is an innovative solution that provides users with essential information on crime rates and safety measures in their area, making it an invaluable tool for anyone looking to stay safe and informed.
